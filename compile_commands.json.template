@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "@project_dir@/build",
+    "command": "/usr/bin/gcc -I @project_dir@ -o lib/factorial.o",
+    "file": "@project_dir@/lib/factorial.c"
+  }
+]
