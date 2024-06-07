@@ -11,3 +11,8 @@ build/lib/factorial.o:
 .PHONY: lsp-setup
 lsp-setup: prepare compile_commands.json.template
 	sed "s|@project_dir@|$(PWD)|g" compile_commands.json.template > build/compile_commands.json
+
+.PHONY: clean
+clean:
+	rm src/*.o
+	rm src/*.hi
